@@ -1,0 +1,43 @@
+<section id="fondo">
+  <div>
+
+    <div class="text-center">
+      <button class="btn btn-dark btn-lg mt-5" [routerLink]="['/inicio']">Regresar</button>
+    </div>
+
+
+    <div class="card mt-4 mx-auto">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="card-inner text-center">
+        <div class="mt-5">
+          <img src="{{detalles.imagen}}" style=" height: 250px">
+          <h1 id="nombre">{{detalles.nombre}} #{{detalles.id}}</h1>
+
+          <!-- <h2> Habilidad:
+            @for ( h of habilidades; track $index) {
+            @if ($index !== habilidades.length -1) { {{h}}, }
+            @else { {{h}} }
+            }
+          </h2> -->
+
+          <h2>
+            Habilidades:
+            <span *ngFor="let h of habilidades; let i = index">
+              <span *ngIf="i < habilidades.length-1">{{h}}, </span>
+              <span *ngIf="i === habilidades.length-1">{{h}}.</span>
+            </span>
+          </h2>
+
+          <p>{{descripcion}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <img class="mx-4" src="{{detalles.gif1}}" width="8%">
+        <img class="mx-4" src="{{detalles.gif2}}" width="8%">
+    </div>
+
+  </div>
+</section>

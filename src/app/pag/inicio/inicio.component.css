@@ -1,0 +1,127 @@
+button {
+    font-size: 1.3rem;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+#rojo {
+    color: black;
+    background-color: red;
+}
+
+
+#rojo:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#rojo.nav-link.active {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#azul {
+    color: black;
+    background-color: blue
+}
+
+#azul:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+#azul.nav-link.active {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+#amarillo {
+    color: black;
+    background-color: yellow;
+}
+
+#amarillo:hover {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+#amarillo.nav-link.active {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+#verde {
+    color: black;
+    background-color: green;
+}
+
+#verde:hover {
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+#verde.nav-link.active {
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+#negro {
+    color: white;
+    background-color: black;
+}
+
+#negro:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#negro.nav-link.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#morado {
+    color: white;
+    background-color: purple;
+}
+
+#morado:hover {
+    background-color: rgba(128, 0, 128, 0.5);
+}
+
+#morado.nav-link.active {
+    background-color: rgba(128, 0, 128, 0.5);
+}
+
+#blanco {
+    color: black;
+    background-color: white;
+}
+
+#blanco:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#blanco.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#rosa {
+    color: black;
+    background-color: pink;
+}
+
+#rosa:hover .nav-link.active {
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+#rosa.nav-link.active {
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+.nav-tabs{
+    border-bottom:none;
+}
+
+.nav-tabs .nav-link.active { 
+    border-bottom-right-radius: var(--bs-nav-tabs-border-radius);
+    border-color: black !important;
+    border-top-width: revert;
+    border-right-width: revert;
+    font-weight: normal;
+}
+
+img {
+    cursor: pointer;
+    width: 50%;
+}

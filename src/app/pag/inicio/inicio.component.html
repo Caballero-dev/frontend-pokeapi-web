@@ -1,0 +1,178 @@
+<section class="container text-center mt-3 mb-3">
+    <h1>Pokemones</h1>
+    <p>Acontinuación podras encontrar los pokemones pertenecientes a los colores disponibles.</p>
+
+    <div>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <button class="nav-link active" id="rojo" data-bs-toggle="tab" data-bs-target="#Color_rojo"
+                    type="button" role="tab" aria-controls="rojo" aria-selected="true" (click)="colorNombre('red')">Rojo
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="azul" data-bs-toggle="tab" data-bs-target="#Color_azul" type="button"
+                    role="tab" aria-controls="azul" aria-selected="false" (click)="colorNombre('blue')">Azul
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="amarillo" data-bs-toggle="tab" data-bs-target="#Color_amarillo" type="button" 
+                role="tab" aria-controls="amarillo" aria-selected="false" (click)="colorNombre('yellow')">Amarillo
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="verde" data-bs-toggle="tab" data-bs-target="#Color_verde" type="button"
+                    role="tab" aria-controls="verde" aria-selected="false" (click)="colorNombre('green')"> Verde
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="negro" data-bs-toggle="tab" data-bs-target="#Color_negro" type="button"
+                    role="tab" aria-controls="negro" aria-selected="false" (click)="colorNombre('black')">Negro
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="morado" data-bs-toggle="tab" data-bs-target="#Color_morado" type="button"
+                    role="tab" aria-controls="morado" aria-selected="false" (click)="colorNombre('purple')">Morado
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="blanco" data-bs-toggle="tab" data-bs-target="#Color_blanco" type="button"
+                    role="tab" aria-controls="blanco" aria-selected="false" (click)="colorNombre('white')">Blanco
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="rosa" data-bs-toggle="tab" data-bs-target="#Color_rosa" type="button"
+                    role="tab" aria-controls="rosa" aria-selected="false" (click)="colorNombre('pink')">Rosa
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Color_rojo" role="tabpanel" aria-labelledby="rojo" tabindex="0"
+                style="background-color: rgba(255,0,0,0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade " id="Color_azul" role="tabpanel" aria-labelledby="azul" tabindex="0"
+                style="background-color: rgba(0, 0, 255, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Color_amarillo" role="tabpanel" aria-labelledby="amarillo" tabindex="0"
+                style="background-color: rgba(255, 255, 0, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Color_verde" role="tabpanel" aria-labelledby="verde" tabindex="0"
+                style="background-color: rgba(0, 128, 0, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Color_negro" role="tabpanel" aria-labelledby="negro" tabindex="0"
+                style="background-color: rgba(0, 0, 0, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Color_morado" role="tabpanel" aria-labelledby="morado" tabindex="0"
+                style="background-color: rgba(128, 0, 128, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Color_blanco" role="tabpanel" aria-labelledby="blanco" tabindex="0"
+                style="background-color: rgba(255, 255, 255, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mt-3 mb-2" *ngFor="let pokemon of pokemonInf; let i = index">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Color_rosa" role="tabpanel" aria-labelledby="rosa" tabindex="0"
+                style="background-color: rgba(255, 192, 203, 0.4); border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; border-top-right-radius: 1rem">
+
+                <div class="container text-center">
+
+                    <div class="row justify-content-center">
+                        @for (pokemon of pokemonInf; track $index) {
+                        <div class="col-md-4 mt-5 mb-5">
+                            <p style="text-transform: capitalize; font-weight: bold;">{{pokemon.nombre}} #{{pokemon.id}}</p>
+                            <div class="mt-2">
+                                <img src="{{pokemon.imagen}}" width="50%" (click)="detallePokemon(pokemon.nombre)">
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
