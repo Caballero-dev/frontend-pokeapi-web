@@ -41,8 +41,8 @@ export class InformacionComponent {
 
       this.habilidades = data.abilities.map((habilidad: any) => habilidad.ability.name);
       
-      console.log(this.detalles);
-      console.log(this.habilidades);
+      // console.log(this.detalles);
+      // console.log(this.habilidades);
     });
   }
 

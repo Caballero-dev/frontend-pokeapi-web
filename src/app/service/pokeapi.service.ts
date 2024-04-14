@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environments';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PokeapiService {
 
-  private url = 'https://pokeapi.co/api/v2/';
+  private url = `${environment.api.pokeapi}`;
 
   constructor(private http: HttpClient) { }
 

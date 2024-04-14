@@ -10,8 +10,12 @@ const routes: Routes = [
   { path: '**', component: InicioComponent }
 ];
 
+const extraOptions = {
+  useHash: true 
+};
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, extraOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
